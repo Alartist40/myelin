@@ -12,8 +12,8 @@ Requires only `rustc` (zero Cargo or Python dependencies).
 
 ## Structure
 - `SKILL.md` — Lean progressive-disclosure router.
-- `src/` — Pure stdlib Rust tools (`graph_index.rs`, `rtk_squish.rs`).
+- `src/` — Pure stdlib Rust tools (`graph_index.rs`, `rtk_squish.rs`, `skill_scan.rs`).
 - `token-optimisation/` — `graphify`, `rtk`, `ponytail` (<=100-line minimal code), `caveman` (leveled compression).
 - `response-optimiser/` — `i-have-adhd` (action-first formatting), `SlopMonster` (anti-AI-slop rules).
-- `cybersecurity/` — `grim-prompter` (threat modeling), `strix` (OWASP Top 10:2025 / PoC review), MITRE & NIST mappings.
+- `cybersecurity/` — `skillspector` (external skill/MCP intake scanner), `grim-prompter` (threat modeling), `strix` (OWASP Top 10:2025 / PoC review), MITRE & NIST mappings.
 - `harness-execution/` — `unlazy` completion gates, 3-tier hierarchy, wave dispatch, and drop-in templates.

@@ -41,6 +41,8 @@ Off only on **"stop myelin"** / **"normal mode"** (confirm in one line).
 ## 3. Conditional Modules (Load On-Demand)
 - **Writing, editing, or debugging code -> load `cybersecurity/SKILL.md`:**
   Runs `grim-prompter` trust-boundary checks, `strix` OWASP Top 10:2025 / API1 BOLA checks, and `A10` fail-closed error checks *before* reporting done — catching bugs and vulnerabilities before user testing.
+- **Loading or combining external skills / MCPs -> run `./bin/skill-scan <dir>` (`cybersecurity/skillspector.md`):**
+  Scans third-party skills for prompt injection, obfuscated execution, secret harvesting, and network exfiltration before trusting them.
 - **Substantial multi-file / multi-agent tasks -> load `harness-execution/SKILL.md`:**
   Enforces `PLAN.md`, `GATES.md`, `IMPLEMENT.md`, 4-pass unit work, 3-tier completion hierarchy, and wave dispatch.
 
@@ -62,4 +64,5 @@ Off only on **"stop myelin"** / **"normal mode"** (confirm in one line).
 | `/ponytail-review` / `/ponytail-audit` / `/ponytail-debt` | `token-optimisation/ponytail.md` |
 | `/investigate-first` / `/surgical-patch` / `/safe-refactor` | `token-optimisation/ponytail.md` |
 | Coding / debugging / `/security` / `/threat-model` | `cybersecurity/SKILL.md` |
+| External skill / MCP intake | `./bin/skill-scan <dir>` (`cybersecurity/skillspector.md`) |
 | Substantial build / multi-agent | `harness-execution/SKILL.md` |
