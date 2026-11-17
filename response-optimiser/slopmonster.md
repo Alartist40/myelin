@@ -14,3 +14,10 @@ Eliminate predictable LLM writing tics, hollow filler, and synthetic enthusiasm 
 
 ## Cross-Check Rule
 Before finalizing human-facing prose (docs, comments, PR descriptions, reports), re-read as a skeptical human editor: cut any sentence that states the obvious, replace abstract nouns with concrete verbs, and verify every claim has a specific file, symbol, or measurement.
+
+## UI & Web Design Anti-Slop
+When building interfaces (`frontend-design/`), reject generic AI-generated frontend patterns:
+- **Banned visual clichés:** Unrequested dark-mode purple/indigo SaaS gradients, gratuitous glassmorphism (`backdrop-blur` on every card), glowing neon borders, and rainbow pill badges.
+- **Banned layout clichés:** Repetitive 3-column icon-above-title feature grids, fake metric counters (`99.9% uptime`, `10k+ users` unless backed by real data), and generic hero+3-cards boilerplate.
+- **Banned placeholder copy:** Never ship `Acme Corp`, `Elevate your workflow`, `Seamless experience`, `Next-gen`, or `Lorem ipsum` — write real, domain-specific copy.
+- **Craft check:** Vary section rhythm to fit the actual content, verify `>=4.5:1` contrast, and test mobile + desktop layouts before reporting done.

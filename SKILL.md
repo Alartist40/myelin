@@ -39,6 +39,10 @@ Off only on **"stop myelin"** / **"normal mode"** (confirm in one line).
   - **SlopMonster:** Zero AI clichés (`delve`, `tapestry`, `crucial`, `moreover`, `leverage`), zero fake enthusiasm, zero padded triplets.
 
 ## 3. Conditional Modules (Load On-Demand)
+- **Building a new feature, greenfield app, or ambiguous request -> load `building/SKILL.md`:**
+  Runs `spec-kit` 4-stage Spec-Driven Development (Specify -> Plan -> Tasks -> Implement) so you lock requirements before coding.
+- **Building UI, web pages, dashboards, or visual components -> load `frontend-design/SKILL.md`:**
+  Runs `ai-design-skills` (Design Brief + Visual System) paired with `SlopMonster` UI Anti-Slop and `ponytail` native-first CSS/HTML.
 - **Writing, editing, or debugging code -> load `cybersecurity/SKILL.md`:**
   Runs `grim-prompter` trust-boundary checks, `strix` OWASP Top 10:2025 / API1 BOLA checks, and `A10` fail-closed error checks *before* reporting done — catching bugs and vulnerabilities before user testing.
 - **Loading or combining external skills / MCPs -> run `./bin/skill-scan <dir>` (`cybersecurity/skillspector.md`):**
@@ -49,8 +53,10 @@ Off only on **"stop myelin"** / **"normal mode"** (confirm in one line).
 ## 4. Binding Conflict Resolutions
 | Tension | Resolution |
 |---|---|
+| `spec-kit` (specify upfront) vs `ponytail` (don't stall) | Clarify *what* to build upfront on greenfield/ambiguous tasks (`spec-kit`); once locked, build the *smallest* thing that satisfies the spec (`ponytail`). |
+| `ai-design-skills` (visual craft) vs `ponytail` (minimal code) | Use native HTML/CSS and minimal dependencies for rich design; never bloat with unnecessary UI libraries. |
 | `ponytail` minimal code vs `cybersecurity` | Never simplify away validation, authz, error handling, or secrets safety. |
-| `caveman` brevity vs `SlopMonster` | Both cut fluff; persisted surfaces (code/docs/PRs) use crisp `SlopMonster`-free prose. |
+| `caveman` brevity vs `SlopMonster` | Both cut fluff; persisted surfaces (code/docs/PRs/UI) use crisp `SlopMonster`-free prose and intentional design. |
 | `strix` PoC-only vs coding-time checks | Static catches while coding are labeled *observations*; tested/reproduced issues are *confirmed*. |
 | Code turn vs action-first | Code block/diff first for code requests; runnable command/path first for ops turns. |
 | Scoped autonomy vs audit read-only | Edit `OWNS:` files autonomously in implementation; audits stay read-only until scoped; confirm destructive ops. |
@@ -63,6 +69,8 @@ Off only on **"stop myelin"** / **"normal mode"** (confirm in one line).
 | `/caveman [lite\|full\|ultra\|wenyan-*]` | `token-optimisation/caveman.md` |
 | `/ponytail-review` / `/ponytail-audit` / `/ponytail-debt` | `token-optimisation/ponytail.md` |
 | `/investigate-first` / `/surgical-patch` / `/safe-refactor` | `token-optimisation/ponytail.md` |
+| `/spec` / `/build` / new feature / greenfield | `building/SKILL.md` |
+| `/design` / `/ui` / frontend / web page | `frontend-design/SKILL.md` |
 | Coding / debugging / `/security` / `/threat-model` | `cybersecurity/SKILL.md` |
 | External skill / MCP intake | `./bin/skill-scan <dir>` (`cybersecurity/skillspector.md`) |
 | Substantial build / multi-agent | `harness-execution/SKILL.md` |
